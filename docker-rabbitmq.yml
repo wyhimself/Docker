@@ -1,0 +1,12 @@
+rabbitmq:
+    image: wy00eurus/rabbitmq-server:0.1.3
+    hostname: rabbitmq
+    ports:
+      - "15672:15672"
+    environment:
+      - RABBITMQ_S_USER=server
+      - RABBITMQ_S_PASS=123456
+      - RABBITMQ_C_USER=client
+      - RABBITMQ_C_PASS=123123
+      - RABBITMQ_VHOST=MYHost
+  
